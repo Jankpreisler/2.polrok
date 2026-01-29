@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 
 </head>
-<body>
+<script>
     
+    function naplnInputy() {
+
+        let meno = prompt("Zadaj Meno");
+        let vek = prompt("Zadaj Vek");
+
+
+        document.getElementById("meno").value = meno;
+        document.getElementById("vek").value = vek;
+    }
+</script>
+
+<body>
+    <input id="meno" class="meno" style="width: 250px; height: 30px;" type="text">
+    <input id="vek" class="vek" style="width: 250px; height: 30px;" type="text">
+    <button style="width: 250px; height: 30px; display: block; margin-top: 20px;" onclick="naplnInputy()">Napis</button>
+
 </body>
+
+
 </html>
