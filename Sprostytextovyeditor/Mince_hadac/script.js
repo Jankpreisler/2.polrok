@@ -79,7 +79,7 @@ function findCoin(fakecoin, isHeavy) {
         }
     }
 
-    
+
     else if (vysledok1 === "left is hevier") {
 
         console.log("=== Druhe vazenie vazenie ===");
@@ -92,8 +92,16 @@ function findCoin(fakecoin, isHeavy) {
             console.log("Vysledok druheho vazenia je:", vysledok2);
 
         }
+        else if(vysledok2 === "left is hevier") {
+
+        }
+        else if(vysledok2 === "right is hevier") {
+
+        }
+
 
     }
+    
 }
 
 findCoin(9, false);
