@@ -10,7 +10,7 @@ function findCoin(fakecoin, isHeavy) {
 
         for (let coins of left) {
 
-            if (coins == 9) {
+            if (coins == 12) {
 
                 leftweight += isHeavy ? 2 : 0.5;
             }
@@ -21,7 +21,7 @@ function findCoin(fakecoin, isHeavy) {
 
         for (let coins of right) {
 
-            if (coins == 9) {
+            if (coins == 12) {
 
                 rightweight += isHeavy ? 2 : 0.5;
 
@@ -54,7 +54,7 @@ function findCoin(fakecoin, isHeavy) {
             console.log("Vysledok tretieho vazenia je:", vysledok3);
             if (vysledok3 !== "Balanced are") {
 
-                console.log("Vysledok merania je cislo " ? 9 : 10);
+                console.log("Vysledok merania je cislo ",vysledok3 ? 9 : 10);
             }
             else {
                 console.log("Vysledok merania je cislo 11 ");
@@ -71,7 +71,7 @@ function findCoin(fakecoin, isHeavy) {
             console.log("Vysledok tretieho vazenia je:", vysledok3);
             if (vysledok3 !== "Balanced are") {
 
-                console.log("Vysledok merania je cislo " ? 9 : 10);
+                console.log("Vysledok merania je cislo ",vysledok3 ? 9 : 10);
             }
             else {
                 console.log("Vysledok merania je cislo 11 ");
@@ -86,7 +86,8 @@ function findCoin(fakecoin, isHeavy) {
         let vysledok2 = weight([1, 2, 5], [3, 9, 10]);
         console.log("Vysledok druheho vazenia je:", vysledok2);
 
-        if (vysledok2 === "Balanced are") {        // ostalo mi 4 6 7 8
+        if (vysledok2 === "Balanced are") {    
+                // ostalo mi 4 6 7 8
             console.log("=== Tretie vazenie vazenie ===");
             let vysledok2 = weight([4,6], [3, 9, 10]);
             console.log("Vysledok druheho vazenia je:", vysledok2);
@@ -94,14 +95,19 @@ function findCoin(fakecoin, isHeavy) {
         }
         else if(vysledok2 === "left is hevier") {
 
+            console.log("=== Tretie vazenie vazenie ===");
+            let vysledok2 = weight([4,6], [3, 9, 10]);
+            console.log("Vysledok druheho vazenia je:", vysledok2);
+
         }
         else if(vysledok2 === "right is hevier") {
 
+            console.log("=== Tretie vazenie vazenie ===");
+            let vysledok2 = weight([4,6], [3, 9, 10]);
+            console.log("Vysledok druheho vazenia je:", vysledok2);
+
         }
-
-
     }
-    
 }
 
-findCoin(9, false);
+findCoin(12, false);
