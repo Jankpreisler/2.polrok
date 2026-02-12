@@ -4,18 +4,7 @@ function uhadni() {
     let guess = 0;
     let attempts = 3;
     
-
-    
     for (i = 1; i <= 3; i++) {
-
-        let hint = "5";
-
-        if(randomInt > 5){
-            hint = "Cislo je vacsie ako 5";
-        }
-        else{
-            hint = "Cislo je mensie ako 5";
-        }
 
 
         const input = prompt("Zadajte cislo od 1 az do 10");
