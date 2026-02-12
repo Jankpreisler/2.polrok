@@ -112,11 +112,7 @@ switch (znamka) {
 // Uroven 2
 
 for (i = 0; i <= 20; i += 2) {
-
-
     console.log(i);
-
-
 }
 
 for (o = 1; o <= 19; o += 2) {
@@ -135,6 +131,7 @@ for (d = 0; d <= 100; d += 10) {
     console.log(d);
 }
 
+// 3 uroven
 
 for (i = 1; i <= 20; i++) {
     if (i % 3 === 0) {
@@ -180,7 +177,54 @@ for (i = 1; i <= 100; i++) {
 
 }
 
+// 4 uroven
 
+let sucet = 0;
+for (i = 1; i <= 10; i++) 
+{
+  sucet += i;
 
+}
+console.log(sucet);
 
+let sucet1 = 0;
 
+for (i = 1; i <= 20; i++) {
+
+    if (i % 2 === 0) {
+        sucet1 +=i;
+    }
+
+}
+console.log(sucet1);
+
+let sucetcisel = 0;
+
+for (i = 1; i <= 100; i++) {
+
+    if (i % 7 === 0) {
+        sucetcisel++
+    }
+
+}
+console.log(sucetcisel);
+
+for (i = 1; i <= 50; i++) {
+
+    if (i % 6 === 0 ) {
+        if(i > 43) 
+        {
+          console.log(i);
+        }
+        
+    }
+
+}
+
+let sucin = 1;
+for (i = 1; i <= 10; i++) 
+{
+  sucet *= i;
+
+}
+console.log(i);
