@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Simple Calculator</title>
+</head>
+<style>
+    .button {
+        width: 50px;
+        height: 50px;
+        margin: 2px;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .button:hover {
+        transition: background 0.3s ease;
+        background: rgb(119, 119, 119);
+    }
+
+    .buttono{
+        width: 50px;
+        height: 50px;
+        margin: 2px;
+        border-radius: 5px;
+        border: none;
+        background-color: orange;
+    }
+
+    .buttono:hover {
+        transition: background 0.3s ease;
+        background: rgb(177, 115, 0) 
+    };
+</style>
+
+<body>
+
+    <div
+        style="text-align: center; background-color: rgb(85, 85, 85); max-width: 250px;  padding: 20px; border-radius: 25px;">
+        <h3 style="text-align: center; color: white;">Calculator 3000</h1>
+
+            <div style="text-align: center;">
+                <input style="width: 220px; height: 35px; border-radius: 5px; margin-bottom: 15px; border: none;"
+                    type="text" id="result">
+            </div>
+
+            <div>
+                <input class="button" type="button" value=1 onclick="addNumber(this)">
+                <input class="button" type="button" value=2 onclick="addNumber(this)">
+                <input class="button" type="button" value=3 onclick="addNumber(this)">
+                <input  class="buttono" type="button" value="+" onclick="operator('+')">
+            </div>
+
+            <div>
+                <input class="button" type="button" value=4 onclick="addNumber(this)">
+                <input class="button" type="button" value=5 onclick="addNumber(this)">
+                <input class="button" type="button" value=6 onclick="addNumber(this)">
+                <input  class="buttono" type="button" value="-" onclick="operator('-')">
+            </div>
+
+            <div>
+                <input class="button" type="button" value=7 onclick="addNumber(this)">
+                <input class="button" type="button" value=8 onclick="addNumber(this)">
+                <input class="button" type="button" value=9 onclick="addNumber(this)">
+                <input class="buttono" type="button" value="*" onclick="operator('*')">
+            </div>
+
+            <div>
+                <input class="button" type="button" value=C onclick="clearDisplay()">
+                <input class="button" type="button" value=0 onclick="addNumber(this)">
+                <button class="button" onclick=handlecalculate()>=</button>
+                <input  class="buttono" type="button" value="/" onclick="operator('/')">
+
+            </div>
+
+    </div>
+
+    <div>
+        <h2 class="His">Historia</h2>
+        <p id="Historia"></p>
+    </div>
+
+    
+
+    <script src="funkcia.js"></script>
+</body>
+
+</html>
