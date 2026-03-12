@@ -71,10 +71,3 @@ function clearDisplay() {
 
     document.getElementById("result").value = "";
 }
-
-
-
-
-
-
-
